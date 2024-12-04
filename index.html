@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria Lociones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f8f9fa;
+    }
+
+    /* Ajustes del header */
+    header {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 180px;
+      padding-left: 20px; /* Despegar el logo del lado izquierdo */
+    }
+
+    /* Navegación */
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-item {
+      margin: 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Botón del carrito */
+    .carrito-btn {
+      background-color: white;
+      color: black;
+      border: none;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background-color 0.3s ease;
+      padding-right: 20px; /* Despegar el carrito del lado derecho */
+    }
+
+    .caja{
+
+      margin-top: 60px;
+    }
+
+    .carrito-btn i {
+      font-size: 1.2rem;
+    }
+
+    /* Ajustes de la barra de búsqueda */
+    form {
+      display: flex;
+      gap: 10px;
+    }
+
+    form input[type="search"] {
+      width: 200px;
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="bg-dark text-white">
+  <div class="container-header py-3">
+    <img src="Img/nombre empresa.png" alt="Logo de Maria Lociones" class="logo">
+    
+    <!-- Barra de navegación -->
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="mujer.html" class="nav-link">Perfume Mujer</a></li>
+        <li class="nav-item"><a href="hombre.html" class="nav-link">Perfume Hombre</a></li>
+        <li class="nav-item"><a href="ninos.html" class="nav-link">Niños</a></li>
+        <li class="nav-item"><a href="ordenar.html" class="nav-link">Ordenar por</a></li>
+      </ul>
+    </nav>
+
+    <!-- Botones de búsqueda y carrito -->
+    <div class="d-flex align-items-center gap-3">
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+      <a href="carrito.html" class="carrito-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span>Carrito</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Resto del contenido de la página -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Marcas de Nuestro Catálogo</h2>
+    <div class="caja   row text-center">
+      <div class="col-6 col-md-3">
+        <img src="img/esika logo.png" alt="Ésika" class="img-fluid" style="max-width: 120px;">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="img/Avon-logo.png" alt="Avon" class="img-fluid" style="max-width: 120px;">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="img/natura.png" alt="Natura" class="img-fluid" style="max-width: 120px;">
+      </div>
+      <div class="col-6 col-md-3">
+        <img src="img/Yanbal-logo.png" alt="Yanbal" class="img-fluid" style="max-width: 120px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Nuevas Fragancias</h2>
+    <div class="row">
+      <!-- Producto -->
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="img/perfume-dorsay-class-100-ml-esika.webp" class="card-img-top" alt="Dorsay">
+          <div class="card-body">
+            <h5 class="card-title">Dorsay</h5>
+            <p class="card-text">Ésika - $50,000</p>
+            <a href="carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <!-- Más productos -->
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="img/Perfume-Lolita-Lempicka-Para-Mujer-100-ml-FRASCO.jpg" class="card-img-top" alt="Lolita">
+          <div class="card-body">
+            <h5 class="card-title">Lolita</h5>
+            <p class="card-text">Avon - $45,000</p>
+            <a href="carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="img/perfumerarooooooo.jpg" class="card-img-top" alt="Sueño">
+          <div class="card-body">
+            <h5 class="card-title">Sueño</h5>
+            <p class="card-text">Natura - $40,000</p>
+            <a href="carrito.html" class="btn btn-secondary">Añadir al Carrito</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="nuevasfragancias.html" class="btn btn-dark">Ver todas las Nuevas Fragancias</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h5>Compañía</h5>
+        <ul class="list-unstyled">
+          <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
+          <li><a href="politica.html" class="text-white">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Ayuda</h5>
+        <ul class="list-unstyled">
+          <li><a href="preguntas.html" class="text-white">Preguntas Frecuentes</a></li>
+          <li><a href="envios.html" class="text-white">Envíos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Mi Cuenta</h5>
+        <ul class="list-unstyled">
+          <li><a href="iniciarsesion.html" class="text-white">Iniciar Sesión</a></li>
+          <li><a href="registro.html" class="text-white">Registrarse</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5>Síguenos</h5>
+        <div>
+          <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <small>&copy; 2024 Maria Lociones. Todos los derechos reservados.</small>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-cuI1SShdPZLBZ9OS6IWBlzUBmx43n1J99qD0i61zo63Fq5zKb6CgzAo2rU7Zy4D1" crossorigin="anonymous"></script>
+</body>
+</html>
